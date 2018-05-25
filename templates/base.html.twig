@@ -19,7 +19,7 @@
                         <li><a href="#">Contacts</a></li>
                     </ul>
                     <div class="nav navbar-nav navbar-right">
-                        <button type="submit" class="btn btn-default"><a href="#">Order</a></button>
+                        <a  class="btn btn-danger" href="#">Order</a>
                     </div>
                 </div>
             </div>
@@ -27,43 +27,60 @@
         <div class="header-320">
             <div class="header">
                 <header class="header-text">
-                    <h1>Title big long very very very very very</h1>
-                    <p>Subtitle small but long  very very very very very very very very very
-                        very very very very very very very very very very very very
-                        very very very very very</p>
+                    <h1>Профессиональное наращивание ресниц</h1>
+                    <p>Стань обладательницей *** *** взгляда</p> {# завораживающего, пленяющего, покоряющего, рокового, неотразимого #}
                 </header>
             </div>
         </div>
         <div class="wrapper">
             <div class="skeleton container text-center">
-                <h3 class="section-header">About</h3>
+                <h3 class="section-header">О нас</h3>
                 <div class="row" style="width: 100%;">
                     <div class="col-md-4">
                         <img class="about-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
-                        <p class="title">Title big long</p>
-                        <p class="desc">Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside,</p></div>
-                    <div class="col-md-4">
-                        <img class="about-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
-                        <p class="title">Header Important Very</p>
-                        <p class="desc">margin-top: auto; margin-bottom: auto; 2 - Vertical Center with Flexbox: Since Bootstrap 4 .row is now display:flex you can simply use align-self-center on any column to vertically center it... or, use align-items-center on the entire .row to vertically center align all col-* in the row.</p>
+                        <p class="title">Опытный мастер</p>
+                        <p class="desc">
+                            Процедура наращивания ресниц производится сертифицированным мастером с опытом работы более двух лет.
+                            Квалификация мастера (...).
+                            Мастер находит индивидуальный подход к клиенту, консультирует по любым вопросам до/после процедуры.
+                        </p>
                     </div>
                     <div class="col-md-4">
                         <img class="about-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
                         <p class="title">Header Important Very</p>
-                        <p class="desc">margin-top: auto; margin-bottom: auto; 2 - Vertical Center with Flexbox: Since Bootstrap 4 .row is now display:flex you can simply use align-self-center on any column to vertically center it... or, use align-items-center on the entire .row to vertically center align all col-* in the row.</p>
+                        <p class="desc">
+                            lol
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="about-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
+                        <p class="title">Материалы премиум качества</p>
+                        <p class="desc">
+                            При наращивании ресниц используются только премиум материалы, что дает гарантию высокого качества работы:
+                            <ul>
+                                <li>объемные и эффектные ресницы</li>
+                                <li>результат держится 3-4 недели</li>
+                                <li>без повреджения натуральных ресниц</li>
+                            </ul>
+                        </p>
                     </div>
                 </div> <!-- row -->
             </div> <!-- skeleton  -->
         </div> <!-- wrapper -->
         <div class="color-wrapper">
             <div class="skeleton container">
-                <h3>Procedure</h3>
+                <h3 align="center" class="section-header">Виды наращивания и цены</h3>
                 <div class="row table-row">
                     <div class="col-md-2 text-center col-md-offset-1 vcenter">
                         <img class="eye-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
                     </div>
                     <div class="col-md-4 text-center vcenter">
-                        <p>Description skldfsklfjslkdfjslkf sdklfsldkfh lskdfj lskdfhk  lskdfhskldfh</p>
+                        <h2>Классическое наращивание</h2>
+                        <p>
+                            Классическое наращивание ресниц подразумевает приклеивание к каждой родной реснице одной искусственной.
+                            Чтобы желаемый эффект утолщения и удлинения сохранялся максимально долго, процедура должна выполняться
+                            технически правильно и с использованием высококачественных материалов.
+                        </p>
                     </div>
                     <div class="col-md-2 text-center vcenter">
                         60 min
@@ -77,7 +94,12 @@
                         <img class="eye-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
                     </div>
                     <div class="col-md-4 text-center vcenter">
-                        <p>Description skldfsklfjslkdfjslkf sdklfsldkfh lskdfj lskdfhk  lskdfhskldfh</p>
+                        <h2>2D наращивание</h2>
+                        <p>
+                            Эффект двойного наращивания ресниц достигается за счет приклеивания на
+                            каждую родную ресницу по две собранные «пучком» искусственные.
+                            Со временем искусственные ресницы начнут отклеиваться, но при двойном эффекте это будет менее заметно.
+                        </p>
                     </div>
                     <div class="col-md-2 text-center vcenter">
                         60 min
@@ -91,7 +113,11 @@
                         <img class="eye-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
                     </div>
                     <div class="col-md-4 text-center vcenter">
-                        <p>Description skldfsklfjslkdfjslkf sdklfsldkfh lskdfj lskdfhk  lskdfhskldfh</p>
+                        <h2>3D наращивание</h2>
+                        <p>
+                            Объемная техника наращивания с эффектом 3D – это тройная густота, пышность и глубина цвета ваших ресниц.
+                            При этом способе наращивания на каждую натуральную прикрепляются по три искусственные ресницы, собранные в пучок особой техникой.
+                        </p>
                     </div>
                     <div class="col-md-2 text-center vcenter">
                         60 min
@@ -105,7 +131,12 @@
                         <img class="eye-image img-circle" src="{{ asset('/img/round.png') }}" alt="...">
                     </div>
                     <div class="col-md-4 text-center vcenter">
-                        <p>Description skldfsklfjslkdfjslkf sdklfsldkfh lskdfj lskdfhk  lskdfhskldfh</p>
+                        <h2>Голливуд наращивание</h2>
+                        <p>
+                            Голливудский объем наращивания позволяет добиться максимального эффекта от наращивания не
+                            нанося никакого вреда натуральным ресницам и не создавая тяжести или дискомфорта для глаз.
+                            Невесомые ультрамягкие ресницы обеспечат эффект Smoky eyes и сделают ваш роскошный взгляд настоящей изюминкой облика.
+                        </p>
                     </div>
                     <div class="col-md-2 text-center vcenter">
                         60 min
@@ -117,10 +148,10 @@
                 {# Типы наращивания, время, цены #}
             </div>  <!-- skeleton  -->
         </div>  <!-- wrapper -->
-        {#
         <div class="wrapper">
-            <div class="skeleton">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin: 0 auto">
+            <div class="skeleton container  text-center">
+                <h3  align="center" class="section-header">Examples</h3>
+                <div id="carousel-example-generic" class="carousel slide examples" data-ride="carousel">
                     <!-- Показатели -->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -131,12 +162,12 @@
                     <!-- Обертка для слайдов -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img style="width: 900px" src="{{ asset('img/test.png') }}" alt="...">
+                            <img class="img-fluid" style="width: 100%" src="{{ asset('img/test.png') }}" alt="...">
                             <div class="carousel-caption">
                             </div>
                         </div>
                         <div class="item">
-                            <img style="width: 900px" src="{{ asset('img/test.png') }}" alt="...">
+                            <img class="img-fluid" style="width: 100%" src="{{ asset('img/test.png') }}" alt="...">
                             <div class="carousel-caption">
                             </div>
                         </div>
@@ -144,16 +175,24 @@
                 </div>
             </div>  <!-- skeleton  -->
         </div>  <!-- wrapper -->
-        #}
-        <div class="wrapper">
+        <div class="color-wrapper">
             <div class="skeleton container">
-                <h3>Contacts</h3>
+                <h3  align="center" class="section-header">Контакты</h3>
                 {# Контакты #}
                 <div class="row" style="width: 100%;">
-                    <div class="col-md-8 text-center">
-
+                    <div class="col-md-4 text-center col-md-offset-2 col-sm-8 col-xs-12 col-sm-offset-0">
+                        Для записи на процедуру или бесплатную консультацию заполните данную форму. Мастер свяжется с Вами, ответит на все интересующие вопросы и назначит удобное Вам время процедуры.
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="phone" placeholder="Телефон">
+                            </div>
+                            <button id="sendButton" class="btn btn-danger">Записаться</button>
+                        </form>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4 col-md-offset-1 col-xs-12">
                         <p><img class="icon" src="{{ asset('img/instagram_icon.png') }}" alt="..."> @instagram</p>
                         <p><img class="icon" src="{{ asset('img/viber_icon.png') }}" alt="..."> +380995554433</p>
                         <p><img class="icon" src="{{ asset('img/location_icon.png') }}" alt="..."> м. Левобережная</p>
@@ -167,6 +206,8 @@
             </div>  <!-- skeleton  -->
         </div>  <!-- wrapper -->
         <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.maskedinput.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     </body>
 </html>

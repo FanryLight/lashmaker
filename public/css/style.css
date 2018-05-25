@@ -3,7 +3,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(100%, 100%, 100%, 0.3);
+    background-color: rgba(255,255,255,0.4);
+    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+    transition: background-color 0.3s ease-in-out;
+    padding: 5px 60px;
+    z-index: 100;
 }
 
 .body {
@@ -88,8 +92,31 @@
 
 }
 
+.form {
+    width: 300px;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: "Open Sans script=all rev=1" !important;
     font-weight: 600 !important;
     font-style: normal !important;
+}
+.carousel-inner img {
+    margin: auto;
+}
+
+.examples {
+    margin: 0 auto;
+    width: 70%
+}
+
+@media screen and (max-width: 970px)  {
+    .skeleton {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .examples {
+        width: 100%;
+    }
 }

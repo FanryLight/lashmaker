@@ -193,9 +193,23 @@
                         </form>
                     </div>
                     <div class="col-md-4 col-md-offset-1 col-xs-12">
-                        <p><img class="icon" src="{{ asset('img/instagram_icon.png') }}" alt="..."> @instagram</p>
-                        <p><img class="icon" src="{{ asset('img/viber_icon.png') }}" alt="..."> +380995554433</p>
-                        <p><img class="icon" src="{{ asset('img/location_icon.png') }}" alt="..."> м. Левобережная</p>
+                        <table>
+                            <tr style="height: 50px">
+                                <td width="50px"><img class="icon" src="{{ asset('img/instagram_icon.png') }}" alt="..."></td>
+                                <td>@instagram</td>
+                            </tr>
+                            <tr style="height: 50px">
+                                <td><img class="icon" src="{{ asset('img/viber_icon.png') }}" alt="..."></td>
+                                <td>+380995554433</td>
+                            </tr>
+                            <tr style="height: 70px">
+                                <td><img class="icon" src="{{ asset('img/location_icon.png') }}" alt="..."></td>
+                                <td>
+                                    <p>м. Левобережная</p>
+                                    <a class="alert-link" href="https://goo.gl/maps/Y9J5UuaNQP52" target="_blank">Показать на карте</a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>  <!-- skeleton  -->

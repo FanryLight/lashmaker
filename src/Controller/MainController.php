@@ -24,22 +24,24 @@ class MainController extends Controller
     public function sendContactsAction(Request $request) {
         $name = $request->get('name');
         $phone = $request->get('phone');
+        $response = 0;
         if ($name && $phone) {
             $message = (new \Swift_Message('Запись на процедуру'))
-                ->setFrom('medoeva@brights.com.ua')
-                ->setTo('fanrylight@gmail.com')
+                ->setFrom(['fanrylight@gmail.com' => 'John Doe'])
+                ->setTo('medoeva@brights.com.ua')
                 ->setBody(
-                    $this->renderView(
-                        'email.html.twig',
-                        [
-                            'name' => $name,
-                            'phone' => $phone
-                        ]
-                    ),
+                    "Имя: $name\r\nТелефон: $phone",
                     'text/plain'
                 );
-            $this->get('mailer')->send($message);
+            $transport = (new \Swift_SmtpTransport('in-v3.mailjet.com', 25))
+                ->setUsername('4a0694f2cc84b2d0fcfa771d65ada8d2')
+                ->setPassword('49739284e7791b4cf65e01e346ebba2c')
+            ;
+
+            // Create the Mailer using your created Transport
+            $mailer = new \Swift_Mailer($transport);
+            $response = $mailer->send($message);
         }
-        return new JsonResponse();
+        return new JsonResponse(['resp' => $response]);
     }
 }

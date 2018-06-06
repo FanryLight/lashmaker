@@ -23,7 +23,10 @@ jQuery(function ($) {
                         'phone': phone
                     },
                     success: function (data) {
-                        console.log(data);
+                        if (data.resp) {
+                            $('#name').val('');
+                            $('#phone').val('');
+                        }
                     }
                 }
             )
